@@ -7,7 +7,7 @@ states = {
 	'Michigan': 'MI'
 }
 
-# create a basic set of states with some cities in them					
+# create a basic set of states with some cities in them
 cities = {'CA': 'San Francisco', 'MI': 'Detroit', 'FL': 'Jacksonville'}
 
 # add some more cities
