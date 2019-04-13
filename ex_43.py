@@ -88,17 +88,17 @@ class LaserWeaponArmory(Scene):
 			print(dedent("""
 				The container clicks open and the seal breaks, letting gas out. You grab the neutron bomb and run as fast as you can to the bridge where you must place it in the right spot.
 				"""))
-			return "the_bridge"
+			return 'the_bridge'
 		else:
 			print(dedent("""
-				The lock buzzes one last time and thern you hear the sickening melting sound as the mechanism is fused together. You decide to sit there, and finally the Gothons blow up the ship from their ship and you die.
+				The lock buzzes one last time and then you hear the sickening melting sound as the mechanism is fused together. You decide to sit there, and finally the Gothons blow up the ship from their ship and you die.
                     """))
 			return 'death'
 class TheBridge(Scene):
 
 	def enter(self):
 		print(dedent("""
-			You burst onto the Bridge andl with the neutron destruct bomb unbder your arm and surprise 5 Gothons who are trying to take control of the ship. Each of them had as even uglier clown costume than the last. They haven't pulled their weapons out yet, as they see the active bomb under your arm and don't want to set it off.
+			You burst onto the Bridge and with the neutron destruct bomb unbder your arm and surprise 5 Gothons who are trying to take control of the ship. Each of them had as even uglier clown costume than the last. They haven't pulled their weapons out yet, as they see the active bomb under your arm and don't want to set it off.
 			"""))
 		action = input("> ")
 
@@ -124,14 +124,14 @@ class EscapePod(Scene):
 		    You rush though the ship desperately trying to make it to the escape pod before the whole ship explodes. It seems like hardly any of the Gothons are on the ship, so your run is clear of interference. You get to the chamber with the escape pods, and now need to pick one to take. Some of them could be damaged, but you don't have time to look. There are 5 pods, which one do you take?'
 		    """))
 		good_pod = randint(1,5)
-		guess = input("[Pod #]> ")
+		guess = input(f"Enter {good_pod}: [Pod #]> ")
 		if int(guess) != good_pod:
-			print(dedent("""
+			print(dedent(f"""
 				You jump into pod {guess} and hit the eject button. The pod escapes out into the void of space, then implodes as the hull ruptures, crushing your body into jam jelly.
 				"""))
 			return 'death'
 		else:
-			print(dedent("""
+			print(dedent(f"""
 				You jump into pod {guess} and hit the eject button. The pod easily slides out into space, heading to the planet below. As it flies to the planet, you look back and see your ship implode then explode like a bright star, taking out the Gothon ship at the same time. You won! 
 				"""))
 			return 'finished'
