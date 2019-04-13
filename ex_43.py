@@ -64,9 +64,9 @@ class CentralCorridor(Scene):
 			return 'death'
 		elif action == "tell a joke":
 			print(dedent("""
-				Lucky forl you they made you learn Gothon insults in the academy. You tell the one Gothon joke you know:Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur ubhfr,fur fvgf nebhaq gur ubhfr. The Gothon stops, tries not to laugh, then busts out laughing and can't move. While he's laughing you run up and shoot him square in the head putting him down, then jump through the Weapon Armory door.
+				Lucky for you they made you learn Gothon insults in the academy. You tell the one Gothon joke you know: Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur ubhfr,fur fvgf nebhaq gur ubhfr. The Gothon stops, tries not to laugh, then busts out laughing and can't move. While he's laughing you run up and shoot him square in the head putting him down, then jump through the Weapon Armory door.
 				"""))
-
+			return 'laser_weapon_armory'
 
 class LaserWeaponArmory(Scene):
 
@@ -165,5 +165,3 @@ class Map(object):
 a_map = Map('central_corridor')
 a_game = Engine(a_map)
 a_game.play()
-
-
