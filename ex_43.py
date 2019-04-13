@@ -1,7 +1,13 @@
+from sys import exit
+from random import randint
+from textwrap import dedent
+
 class Scene(object):
 
 	def enter(self):
-		pass
+	    print("This scene is not yet configured.")
+	    print("Subclass it and implement enter()")
+		exit(1)
 
 
 class Engine(object):
@@ -52,4 +58,5 @@ class Map(object):
 a_map = Map('central_corridor')
 a_game = Engine(a_map)
 a_game.play()
+
 
