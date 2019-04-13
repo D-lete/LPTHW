@@ -102,12 +102,12 @@ class TheBridge(Scene):
         
         if action == "throw the bomb":
             print(dedent("""
-                In a panic, youk throw the bomb at the group of Gothons and make a leap for the door. Right as you drop it a Gothon shoot you right in the back killing you. As you die, you see another Gothon frantically try to disarm the bomb. You die knowing that will probably blowup when it goes off.
+                In a panic, youk throw the bomb at the group of Gothons and make a leap for the door. Right as you drop it a Gothon shoot you right in the back killing you. As you die, you see another Gothon frantically try to disarm the bomb. You die knowing that will probably blow up when it goes off.
                     """))
             return 'death'
         elif action == "slowly place the bomb"
             print(dedent("""
-                You point your blaster at thek bomb under your arms and the Gothons put their hands up and start to sweat. You inch backward to the door, open it anfd then carwefully place the bomb on the floor, pointing your blaster at it. You then jump through the door, punch the 'CLOSE' button and blast the lock so the Gothons can't get out. Now that the bomb is placed, you run to the escape pod to get off this tin can
+                You point your blaster at the bomb under your arms and the Gothons put their hands up and start to sweat. You inch backward to the door, open it and then carefully place the bomb on the floor, pointing your blaster at it. You then jump through the door, punch the 'CLOSE' button and blast the lock so the Gothons can't get out. Now that the bomb is placed, you run to the escape pod to get off this tin can
                 """))
             return 'escape_pod'
         else:
